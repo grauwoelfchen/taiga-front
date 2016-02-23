@@ -65,9 +65,9 @@ paths.htmlPartials = [
 paths.images = paths.app + "images/**/*";
 paths.svg = paths.app + "svg/**/*";
 paths.css_vendor = [
-    paths.app + "styles/vendor/*.css",
     paths.vendor + "intro.js/introjs.css",
-    paths.vendor + "dragula.js/dist/dragula.css"
+    paths.vendor + "dragula.js/dist/dragula.css",
+    paths.app + "styles/vendor/*.css"
 ];
 paths.locales = paths.app + "locales/**/*.json";
 

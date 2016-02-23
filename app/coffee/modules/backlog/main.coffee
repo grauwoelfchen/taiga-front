@@ -386,7 +386,6 @@ class BacklogController extends mixOf(taiga.Controller, taiga.PageMixin, taiga.F
             @scope.$apply =>
                 # Add new us to backlog userstories list
                 # @scope.userstories.splice(newUsIndex, 0, us)
-                console.log usList
                 args = [newUsIndex, 0].concat(usList)
                 Array.prototype.splice.apply(@scope.userstories, args)
 
@@ -805,8 +804,6 @@ BacklogDirective = ($repo, $rootscope, $translate) ->
         linkToolbar($scope, $el, $attrs, $ctrl)
         linkFilters($scope, $el, $attrs, $ctrl)
         linkDoomLine($scope, $el, $attrs, $ctrl)
-
-        $el.find(".backlog-table-body").disableSelection()
 
         filters = $ctrl.getUrlFilters()
         if filters.status ||
