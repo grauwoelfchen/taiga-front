@@ -1,0 +1,13 @@
+div
+
+    div.centered
+        img(
+            tg-project-logo-small-src="vm.project"
+            alt="{{::vm.project.get('name')}}"
+        )
+
+        | {{::vm.project.get("name")}}
+
+        h1 {{'PROJECT.BLOCKED_PROJECT.BLOCKED' | translate}}
+
+        tg-blocked-project-explanation
